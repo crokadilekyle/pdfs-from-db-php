@@ -14,7 +14,7 @@ $log = fopen('exports.log', 'a');
 $conn = OpenCon();
 
 //query
-if ($result = $conn -> query("SELECT * FROM htmlpdf LIMIT 50")) {
+if ($result = $conn -> query("SELECT * FROM table")) {
     if ($result->num_rows > 0){
         while($row = $result->fetch_assoc()) {
             
