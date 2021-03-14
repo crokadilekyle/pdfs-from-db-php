@@ -31,8 +31,8 @@ if ($result = $conn -> query("SELECT * FROM table")) {
             $pdf->AliasNbPages();
             $pdf->AddPage();
             $pdf->SetFont('Times','',12);
-            $pdf->WriteHTML('<br><br><b>Date:</b><br>');
-            $pdf->WriteHTML($date);
+            $pdf->WriteHTML('<br><br><b>Text:</b><br>');
+            $pdf->WriteHTML($text);
             
             //Creates folder specified above
             if (!is_dir($dir)){
